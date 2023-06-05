@@ -1,0 +1,33 @@
+.footer {
+  padding: 100px 0 40px;
+  background: linear-gradient(to bottom, #520101, #2b0200);
+  .links {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+  .logo {
+    margin: 0 auto 40px;
+    width: 80px;
+  }
+  .info {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  .copyright {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 12px;
+  }
+}
