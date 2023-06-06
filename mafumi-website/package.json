@@ -11,6 +11,7 @@
   "dependencies": {
     "next": "13.4.4",
     "react": "18.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "18.2.0",
     "react-string-replace": "^1.1.0",
     "sass": "^1.62.1"

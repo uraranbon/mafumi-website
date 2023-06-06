@@ -15,16 +15,17 @@ export default function Faq() {
         <KeyVisual title ="FAQ" imageName="/keyVisual/bg_coffee.jpg" />
         <section className="sectionArea">
           <div className="innerArea">
-            <div className="contentWrap">
+
+            <div className="contentWrap" id='beans'>
               <h2 className="title01">珈琲豆について</h2>
               <Accordion heading="珈琲豆は何を使っていますか？" content="ブラジルサントスNo.2スクリーン19番を使っています。" />
               <Accordion heading="珈琲豆は販売していますか？" content={<>販売しております。メールにてご連絡いただくか、<a href="https://mafumicoffee.square.site/" target='_blank'>オンラインストア</a>からご購入ください。</>} />
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='access'>
               <h2 className="title01">アクセスについて</h2>
               <Accordion heading="道に迷いました。" content="お店までお電話をいただければ道順をご案内いたします。" />
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='store'>
               <h2 className="title01">店内について</h2>
               <Accordion heading="携帯は充電できますか？" content="充電可能です。2階は全席にコンセントを配置しており、ご自由にお使いいただけます。" />
               <Accordion heading="Wi-Fiは使えますか？" content="使えます。スタッフまでお声がけください。" />

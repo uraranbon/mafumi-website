@@ -14,8 +14,8 @@ export default function PageButtonShop() {
         />
       </figure>
       <p className={styles.info}>
-        <span className={styles.en}>Online Store</span>
-        <span className={styles.ja}>豆の購入はこちら</span>
+        <span className={styles.en}>Online Shop</span>
+        <span className={styles.ja}>豆のご購入はこちら</span>
       </p>
     </Link>
   )

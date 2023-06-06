@@ -16,7 +16,8 @@ export default function Menu() {
         <KeyVisual title ="Menu" imageName="/keyVisual/bg_coffee.jpg" />
         <section className="sectionArea">
           <div className="innerArea">
-            <div className="contentWrap">
+
+            <div className="contentWrap" id='coffee'>
               <h2 className="title01">Coffee</h2>
               <div className="menuImageWrap">
                 <MenuImage imageName="/menu/coffee_img_01.jpg" title="珈琲 琥珀" />
@@ -80,7 +81,7 @@ export default function Menu() {
                 />
               </div>
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='tea'>
               <h2 className="title01">Tea</h2>
               <div className="menuImageWrap">
                 <MenuImage imageName="/menu/tea_img_01.jpg" title="紅茶" />
@@ -93,7 +94,7 @@ export default function Menu() {
                 <MenuItem ja="ロイヤルミルクティ" en="Stewed Tea" price="1,000" />
               </div>
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='other'>
               <h2 className="title01">Other</h2>
               <div className="menuImageWrap">
                 <MenuImage imageName="/menu/other_img_01.jpg" title="浅葱色のくりぃむそぉだ" />
@@ -108,7 +109,7 @@ export default function Menu() {
                 <MenuItem ja="熱帯のシトロナード" en="Citronnade" price="1,100" />
               </div>
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='liquor'>
               <h2 className="title01">Liquor</h2>
               <div className="menuImageWrap">
                 <MenuImage imageName="/menu/liquor_img_01.jpg" title="パーリンカ" />
@@ -125,7 +126,7 @@ export default function Menu() {
                 <MenuItem ja="パーリンカ [各種]" en="Pálinka" price="1,500~" />
               </div>
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='snack'>
               <h2 className="title01">Snack</h2>
               <div className="menuImageWrap">
                 <MenuImage imageName="/menu/snack_img_01.jpg" title="プリン" />
@@ -142,7 +143,7 @@ export default function Menu() {
                 <MenuItem ja="珈琲と、3種のチーズ" en="Coffee with Three Kinds of Cheese" price="1,450~" />
               </div>
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='food'>
               <h2 className="title01">Food</h2>
               <div className="menuImageWrap">
                 <MenuImage imageName="/menu/food_img_01.jpg" title="カレーライス" />
@@ -162,19 +163,19 @@ export default function Menu() {
                   price="1,600" />
               </div>
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='beans'>
               <h2 className="title01">Beans</h2>
               <div className="menuWrap">
                 <MenuItem ja="珈琲豆 200g" en="Coffee Beans 200g" price="1,300" />
               </div>
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='ticket'>
               <h2 className="title01">Ticket</h2>
               <div className="menuWrap">
                 <MenuItem ja="珈琲券 10枚つづり" en="Coffee Ticket (a sheet of 10 coupons)" price="8,000" />
               </div>
             </div>
-            <div className="contentWrap">
+            <div className="contentWrap" id='takeout'>
               <h2 className="title01">Take Out</h2>
               <div className="menuWrap">
                 <MenuItem ja="おもちかえり珈琲" en="Take Out Coffee" price="600" />
