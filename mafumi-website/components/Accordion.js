@@ -25,13 +25,7 @@ export default function Accordion({heading,content}) {
           : '0px',
         }}
       >
-        <p>
-          {reactStringReplace(content, /(https?:\/\/\S+)/g, (match, i) => (
-            <a key={i} href={match} target='_blank'>
-              {match}
-            </a>
-          ))}
-        </p>
+        <p>{content}</p>
       </div>
     </div>
   )

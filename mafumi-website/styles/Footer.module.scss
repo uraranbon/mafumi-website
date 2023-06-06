@@ -1,3 +1,5 @@
+@import "./styles/Mixin.scss";
+
 .footer {
   padding: 100px 0 40px;
   background: linear-gradient(to bottom, #520101, #2b0200);
@@ -8,16 +10,21 @@
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    @media (max-width: 767px) {
+    @include sp {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      grid-template-columns: 1fr;
+      gap: 10px;
     }
     a {
       font-size: 14px;
+      @include sp {
+        display: block;
+        text-align: center;
+      }
     }
   }
   .logo {
+    display: block;
     margin: 0 auto 40px;
     width: 80px;
   }

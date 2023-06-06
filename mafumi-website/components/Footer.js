@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="innerArea">
-        <h2 className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           <Image
             src={Logo}
             alt="MAFUMI COFFEE Since 2016"
@@ -16,7 +16,7 @@ export default function Footer() {
             priority
             placeholder='blur'
           />
-        </h2>
+        </Link>
         <ul className={styles.links}>
           <li><Link href="/about">About Us</Link></li>
           <li><Link href="/menu">Menu</Link></li>

@@ -1,9 +1,40 @@
+@import "./styles/Mixin.scss";
+
 .Accordion {
   border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
-  padding: 20px;
+  padding: 24px 20px;
+  position: relative;
+  @include sp {
+    padding: 20px 0;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1px;
+    background-color: #fff;
+    right: 20px;
+    top: 38px;
+    transition: transform 0.3s, opacity 0.3s;
+    @include sp {
+      width: 20px;
+      right: 0;
+      top: 34px;
+    }
+  }
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 .isOpen {
+  &::before {
+    opacity: 0;
+  }
+  &::after {
+    transform: rotate(180deg);
+  }
   .heading {
     border-bottom: none;
   }
@@ -20,11 +51,43 @@
 }
 
 .heading {
+  position: relative;
+  padding-right: 30px;
+  padding-left: 56px;
+  @include sp {
+    padding-left: 40px;
+  }
+  &::before {
+    content: "Q";
+    background-color: rgba($color: #fff, $alpha: 0.3);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 22px;
+    line-height: 1;
+    padding-bottom: 6px;
+    left: 0;
+    top: -4px;
+    @include sp {
+      top: -2px;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      padding-bottom: 4px;
+    }
+  }
   button {
     font-size: 20px;
     cursor: pointer;
     width: 100%;
     text-align: left;
+    @include sp {
+      font-size: 16px;
+    }
   }
 }
 
@@ -32,9 +95,20 @@
   overflow: hidden;
   height: 0px;
   transition: all 0.3s;
-  font-size: 16px;
   p {
+    padding-left: 56px;
+    padding-right: 30px;
     padding-top: 20px;
+    text-align: justify;
+    @include sp {
+      padding-top: 10px;
+      font-size: 14px;
+      padding-left: 40px;
+    }
+  }
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 }
 

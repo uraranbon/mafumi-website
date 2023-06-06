@@ -1,0 +1,91 @@
+@import "./styles/Mixin.scss";
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 20px 0;
+  background: linear-gradient(to bottom, rgba($color: #000, $alpha: 0.3), transparent);
+  nav {
+    @include pc {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.logo {
+  display: block;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  a {
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 4px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: rgba($color: #fff, $alpha: 0.3);
+    }
+    &:hover {
+      &:before {
+        @include pc {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  @include pc {
+    display: none;
+  }
+  @include sp {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    z-index: 10;
+    &::before,
+    &::after,
+    .bar {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 1px;
+      background-color: var(--white);
+      transition: transform 0.3s;
+    }
+  }
+}
+
+.isOpen {
+  @include sp {
+    .button {
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+    .bar {
+      transform: scale(0);
+    }
+  }
+}

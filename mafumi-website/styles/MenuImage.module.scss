@@ -1,0 +1,17 @@
+@import "./styles/Mixin.scss";
+
+.itemPhoto {
+  figure {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    img {
+      object-fit: cover;
+    }
+  }
+  .title {
+    font-size: 14px;
+    text-align: right;
+    margin-top: 10px;
+  }
+}
