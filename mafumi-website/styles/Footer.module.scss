@@ -4,16 +4,25 @@
   padding: 100px 0 40px;
   background: linear-gradient(to bottom, #520101, #2b0200);
   .links {
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+    @include pc {
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+    }
     @include sp {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 10px;
+    }
+    li {
+      @include sp {
+        &:nth-child(even) {
+          border-left: 1px solid rgba($color: #fff, $alpha: 0.3);
+        }
+      }
     }
     a {
       font-size: 14px;
@@ -29,12 +38,30 @@
     width: 80px;
   }
   .info {
-    padding-top: 40px;
-    font-size: 14px;
+    margin-top: 40px;
+    @include sp {
+      display: none;
+    }
+    th,
+    td {
+      font-size: 14px;
+    }
+    th {
+      text-align: left;
+      vertical-align: top;
+      width: 20%;
+    }
+    td {
+      width: 80%;
+    }
   }
   .copyright {
     margin-top: 60px;
     text-align: center;
     font-size: 12px;
+    @include sp {
+      margin-top: 40px;
+      font-size: 11px;
+    }
   }
 }
