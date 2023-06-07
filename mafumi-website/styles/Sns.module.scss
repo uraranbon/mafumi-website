@@ -1,0 +1,46 @@
+@import "./styles/Mixin.scss";
+
+.snsWrap {
+  display: flex;
+  gap: 40px;
+  @include pc {
+    justify-content: center;
+    align-items: center;
+  }
+  @include sp {
+    flex-direction: column;
+  }
+}
+
+.timeline {
+  @include pc {
+    width: 500px;
+  }
+  @include sp {
+    width: 100%;
+  }
+}
+
+.text {
+  margin-bottom: 40px;
+  line-height: 2;
+  @include sp {
+    text-align: center;
+  }
+}
+
+.button {
+  background-color: rgba($color: #000, $alpha: 0.7);
+  width: 300px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  @include sp {
+    width: 100%;
+  }
+  & + .button {
+    margin-top: 10px;
+  }
+}
