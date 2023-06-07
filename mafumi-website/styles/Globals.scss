@@ -186,6 +186,7 @@ dd {
 
 .sectionArea {
   padding: 140px 0;
+  position: relative;
   @include sp {
     padding: 100px 0;
   }
@@ -245,6 +246,19 @@ dd {
 * + .title02 {
   margin-top: 60px;
 }
+
+.title03 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  @include sp {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
 
 .contentWrap {
   & + .contentWrap {

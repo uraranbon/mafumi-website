@@ -1,0 +1,56 @@
+@import "./styles/Mixin.scss";
+
+.shopWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px 40px;
+  @include sp {
+    grid-template-columns: 1fr;
+  }
+}
+
+.image {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  @include sp {
+    width: 100%;
+    height: 200px;
+  }
+  img {
+    object-fit: cover;
+  }
+}
+
+.table {
+  th, td {
+    @include pc {
+      padding: 14px 0;
+    }
+    @include sp {
+      display: block;
+    }
+  }
+  th {
+    text-align: left;
+    vertical-align: top;
+    @include pc {
+      empty-cells: 30%;
+    }
+    @include sp {
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+  }
+  td {
+    @include pc {
+      width: 70%;
+    }
+    @include sp {
+      padding-top: 0px;
+      padding-bottom: 10px;
+    }
+  }
+}
