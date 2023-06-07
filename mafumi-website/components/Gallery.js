@@ -3,7 +3,7 @@ import styles from '../styles/Gallery.module.scss'
 
 export default function Gallery() {
   return (
-    <section className='sectionArea'>
+    <section>
       <div className={styles.galleryWrap}>
         <figure><Image src="/gallery/photo_img_01.jpg" alt="" fill cover /></figure>
         <figure><Image src="/gallery/photo_img_02.jpg" alt="" fill cover /></figure>
