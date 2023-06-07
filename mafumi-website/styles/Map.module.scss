@@ -1,0 +1,21 @@
+@import "./styles/Mixin.scss";
+
+.map {
+  position: relative;
+}
+
+.mapInfo {
+  @include pc {
+    background-color: rgba($color: #490101, $alpha: 0.7);
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 400px;
+    padding: 20px;
+    font-size: 14px;
+  }
+  @include sp {
+    padding: 20px 15px;
+    font-size: 12px;
+  }
+}
