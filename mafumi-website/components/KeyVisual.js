@@ -1,15 +1,14 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import styles from '../styles/KeyVisual.module.scss'
 
 export default function KeyVisual({title,imageName}) {
   return (
     <section className={styles.keyVisual}>
       <figure>
-        <Image
+        <img
           src={imageName}
           alt=""
-          fill
-          cover
+          fill={true}
         />
       </figure>
       <div className="innerArea">

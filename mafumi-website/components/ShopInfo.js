@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import styles from '../styles/ShopInfo.module.scss'
 
 export default function shopInfo() {
@@ -8,11 +8,10 @@ export default function shopInfo() {
       <div className={styles.shopWrap}>
         <div className={styles.image}>
           <figure>
-            <Image
+            <img
               src="/shop.jpg"
               alt=""
-              fill
-              cover
+              fill={true}
             />
           </figure>
         </div>

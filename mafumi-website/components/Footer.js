@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import Logo from '../public/logo.png'
+// import Image from 'next/image'
 import styles from '../styles/Footer.module.scss'
 
 export default function Footer() {
@@ -8,13 +7,11 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className="innerArea">
         <Link href="/" className={styles.logo}>
-          <Image
-            src={Logo}
+          <img
+            src="../logo.png"
             alt="MAFUMI COFFEE Since 2016"
             width="80"
             height="80"
-            priority
-            placeholder='blur'
           />
         </Link>
         <ul className={styles.links}>

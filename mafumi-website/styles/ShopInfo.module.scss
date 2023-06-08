@@ -21,11 +21,17 @@
   }
   img {
     object-fit: cover;
+    height: 500px;
+    width: 100%;
+    @include sp {
+      height: 200px;
+    }
   }
 }
 
 .table {
-  th, td {
+  th,
+  td {
     @include pc {
       padding: 14px 0;
     }

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import Logo from '../public/logo.png'
+// import Image from 'next/image'
 import styles from '../styles/Header.module.scss'
 
 export default function Header() {
@@ -36,8 +35,8 @@ export default function Header() {
           </button>
 
           <Link href="/" className={styles.logo}>
-            <Image
-              src={Logo}
+            <img
+              src="logo.png"
               alt="MAFUMI COFFEE Since 2016"
               width="80"
               height="80"

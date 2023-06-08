@@ -1,15 +1,14 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import styles from '../styles/MenuImage.module.scss'
 
 export default function MenuImage({imageName,title}) {
   return (
     <div className={styles.itemPhoto}>
       <figure>
-        <Image
+        <img
           src={imageName}
           alt={title}
-          fill
-          cover
+          fill={true}
         />
       </figure>
       <p className={styles.title}>{title}</p>

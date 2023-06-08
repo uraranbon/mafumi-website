@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/PageButton.module.scss'
 
@@ -6,11 +6,10 @@ export default function PageButtonMenu() {
   return (
     <Link href="/menu" className={styles.pageButton}>
       <figure>
-        <Image
+        <img
           src="/pageButton/menu.jpg"
           alt=""
-          fill
-          cover
+          fill={true}
         />
       </figure>
       <p className={styles.info}>

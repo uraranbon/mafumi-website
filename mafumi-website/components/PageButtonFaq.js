@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/PageButton.module.scss'
 
@@ -6,11 +6,10 @@ export default function PageButtonFaq() {
   return (
     <Link href="/faq" className={styles.pageButton}>
       <figure>
-        <Image
+        <img
           src="/pageButton/faq.jpg"
           alt=""
-          fill
-          cover
+          fill={true}
         />
       </figure>
       <p className={styles.info}>

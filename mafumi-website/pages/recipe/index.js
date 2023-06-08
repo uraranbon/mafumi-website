@@ -1,6 +1,6 @@
 import Meta from '../../components/Meta'
 import KeyVisual from '../../components/KeyVisual'
-import Image from 'next/image'
+// import Image from 'next/image'
 import PageButtonMenu from '../../components/PageButtonMenu'
 import PageButtonShop from '../../components/PageButtonShop'
 import Header from '../../components/Header'
@@ -74,11 +74,10 @@ export default function Recipe() {
             <div className="contentWrap">
               <h2 className="title01">珈琲 琥珀</h2>
               <figure className={styles.thumbnail}>
-                <Image
+                <img
                   src="/menu/coffee_img_01.jpg"
                   alt="珈琲 琥珀"
-                  fill
-                  cover
+                  fill={true}
                 />
               </figure>
               <h3 className="title02">材料（2人分／200cc）</h3>
@@ -101,11 +100,10 @@ export default function Recipe() {
             <div className="contentWrap">
               <h2 className="title01">カフェ・アイランダイズ（ホット・アイス）</h2>
               <figure className={styles.thumbnail}>
-                <Image
+                <img
                   src="/menu/coffee_img_03.jpg"
                   alt="カフェ・アイランダイズ（ホット・アイス）"
-                  fill
-                  cover
+                  fill={true}
                 />
               </figure>
               <h3 className="title02">材料（1人分）</h3>

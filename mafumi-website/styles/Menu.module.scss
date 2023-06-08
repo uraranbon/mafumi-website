@@ -76,5 +76,10 @@
   }
   img {
     object-fit: cover;
+    height: 600px;
+    width: 100%;
+    @include sp {
+      height: 200px;
+    }
   }
 }
