@@ -7,7 +7,7 @@ export default function PageButtonFaq() {
     <Link href="/faq" className={styles.pageButton}>
       <figure>
         <img
-          src="/pageButton/faq.jpg"
+          src="/sources/image/pageButton/faq.jpg"
           alt=""
           fill={true}
         />

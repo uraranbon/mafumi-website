@@ -7,7 +7,7 @@ export default function PageButtonShop() {
     <Link href="https://mafumicoffee.square.site/" target='_blank' className={styles.pageButton}>
       <figure>
         <img
-          src="/pageButton/shop.jpg"
+          src="/sources/image/pageButton/shop.jpg"
           alt=""
           fill={true}
         />

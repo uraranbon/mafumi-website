@@ -68,14 +68,14 @@ export default function Recipe() {
     <Meta pageTitle="Recipe" />
       <Header />
       <main>
-        <KeyVisual title ="Recipe" imageName="/keyVisual/bg_coffee.jpg" />
+        <KeyVisual title ="Recipe" imageName="/sources/image/keyVisual/bg_coffee.jpg" />
         <section className="sectionArea">
           <div className="innerArea">
             <div className="contentWrap">
               <h2 className="title01">珈琲 琥珀</h2>
               <figure className={styles.thumbnail}>
                 <img
-                  src="/menu/coffee_img_01.jpg"
+                  src="/sources/image/menu/coffee_img_01.jpg"
                   alt="珈琲 琥珀"
                   fill={true}
                 />
@@ -101,7 +101,7 @@ export default function Recipe() {
               <h2 className="title01">カフェ・アイランダイズ（ホット・アイス）</h2>
               <figure className={styles.thumbnail}>
                 <img
-                  src="/menu/coffee_img_03.jpg"
+                  src="/sources/image/menu/coffee_img_03.jpg"
                   alt="カフェ・アイランダイズ（ホット・アイス）"
                   fill={true}
                 />

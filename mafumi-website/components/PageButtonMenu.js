@@ -7,7 +7,7 @@ export default function PageButtonMenu() {
     <Link href="/menu" className={styles.pageButton}>
       <figure>
         <img
-          src="/pageButton/menu.jpg"
+          src="/sources/image/pageButton/menu.jpg"
           alt=""
           fill={true}
         />

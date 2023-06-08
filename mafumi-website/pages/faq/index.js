@@ -12,7 +12,7 @@ export default function Faq() {
     <Meta pageTitle="FAQ" />
       <Header />
       <main>
-        <KeyVisual title="FAQ" imageName="/keyVisual/bg_coffee.jpg" />
+        <KeyVisual title="FAQ" imageName="/sources/image/keyVisual/bg_coffee.jpg" />
         <section className="sectionArea">
           <div className="innerArea">
 

@@ -13,16 +13,16 @@ export default function Menu() {
       <Meta pageTitle="Menu" />
       <Header />
       <main>
-        <KeyVisual title ="Menu" imageName="/keyVisual/bg_coffee.jpg" />
+        <KeyVisual title ="Menu" imageName="/sources/image/keyVisual/bg_coffee.jpg" />
         <section className="sectionArea">
           <div className="innerArea">
 
             <div className="contentWrap" id='coffee'>
               <h2 className="title01">Coffee</h2>
               <div className="menuImageWrap">
-                <MenuImage imageName="/menu/coffee_img_01.jpg" title="珈琲 琥珀" />
-                <MenuImage imageName="/menu/coffee_img_02.jpg" title="珈琲 水瑠璃" />
-                <MenuImage imageName="/menu/coffee_img_03.jpg" title="カフェ・アイランダイズ" />
+                <MenuImage imageName="/sources/image/menu/coffee_img_01.jpg" title="珈琲 琥珀" />
+                <MenuImage imageName="/sources/image/menu/coffee_img_02.jpg" title="珈琲 水瑠璃" />
+                <MenuImage imageName="/sources/image/menu/coffee_img_03.jpg" title="カフェ・アイランダイズ" />
               </div>
               <div className="menuWrap">
                 <MenuItem
@@ -84,8 +84,8 @@ export default function Menu() {
             <div className="contentWrap" id='tea'>
               <h2 className="title01">Tea</h2>
               <div className="menuImageWrap">
-                <MenuImage imageName="/menu/tea_img_01.jpg" title="紅茶" />
-                <MenuImage imageName="/menu/tea_img_02.jpg" title="アイスティ" />
+                <MenuImage imageName="/sources/image/menu/tea_img_01.jpg" title="紅茶" />
+                <MenuImage imageName="/sources/image/menu/tea_img_02.jpg" title="アイスティ" />
               </div>
               <div className="menuWrap">
                 <MenuItem ja="紅茶" en="Tea" price="900" />
@@ -97,9 +97,9 @@ export default function Menu() {
             <div className="contentWrap" id='other'>
               <h2 className="title01">Other</h2>
               <div className="menuImageWrap">
-                <MenuImage imageName="/menu/other_img_01.jpg" title="浅葱色のくりぃむそぉだ" />
-                <MenuImage imageName="/menu/other_img_02.jpg" title="熱帯のシトロナード" />
-                <MenuImage imageName="/menu/other_img_03.jpg" title="ホット・チョコレート" />
+                <MenuImage imageName="/sources/image/menu/other_img_01.jpg" title="浅葱色のくりぃむそぉだ" />
+                <MenuImage imageName="/sources/image/menu/other_img_02.jpg" title="熱帯のシトロナード" />
+                <MenuImage imageName="/sources/image/menu/other_img_03.jpg" title="ホット・チョコレート" />
               </div>
               <div className="menuWrap">
                 <MenuItem ja="ホット・チョコレート" en="Hot Chocolate" price="1,000" />
@@ -112,9 +112,9 @@ export default function Menu() {
             <div className="contentWrap" id='liquor'>
               <h2 className="title01">Liquor</h2>
               <div className="menuImageWrap">
-                <MenuImage imageName="/menu/liquor_img_01.jpg" title="パーリンカ" />
-                <MenuImage imageName="/menu/liquor_img_02.jpg" title="ウイスキィ（ザ グレンロセス" />
-                <MenuImage imageName="/menu/liquor_img_03.jpg" title="コレクションの一部" />
+                <MenuImage imageName="/sources/image/menu/liquor_img_01.jpg" title="パーリンカ" />
+                <MenuImage imageName="/sources/image/menu/liquor_img_02.jpg" title="ウイスキィ（ザ グレンロセス" />
+                <MenuImage imageName="/sources/image/menu/liquor_img_03.jpg" title="コレクションの一部" />
               </div>
               <div className="menuWrap">
                 <MenuItem ja="ビール [ハートランド]" en="Beer" price="900" />
@@ -129,8 +129,8 @@ export default function Menu() {
             <div className="contentWrap" id='snack'>
               <h2 className="title01">Snack</h2>
               <div className="menuImageWrap">
-                <MenuImage imageName="/menu/snack_img_01.jpg" title="プリン" />
-                <MenuImage imageName="/menu/snack_img_02.jpg" title="季節のレアチーズケーキ（マスカット）" />
+                <MenuImage imageName="/sources/image/menu/snack_img_01.jpg" title="プリン" />
+                <MenuImage imageName="/sources/image/menu/snack_img_02.jpg" title="季節のレアチーズケーキ（マスカット）" />
               </div>
               <div className="menuWrap">
                 <MenuItem
@@ -146,9 +146,9 @@ export default function Menu() {
             <div className="contentWrap" id='food'>
               <h2 className="title01">Food</h2>
               <div className="menuImageWrap">
-                <MenuImage imageName="/menu/food_img_01.jpg" title="カレーライス" />
-                <MenuImage imageName="/menu/food_img_02.jpg" title="ルッコラの海に溺れるクロックムッシュ" />
-                <MenuImage imageName="/menu/food_img_03.jpg" title="食後に珈琲をどうぞ" />
+                <MenuImage imageName="/sources/image/menu/food_img_01.jpg" title="カレーライス" />
+                <MenuImage imageName="/sources/image/menu/food_img_02.jpg" title="ルッコラの海に溺れるクロックムッシュ" />
+                <MenuImage imageName="/sources/image/menu/food_img_03.jpg" title="食後に珈琲をどうぞ" />
               </div>
               <div className="menuWrap">
                 <MenuItem

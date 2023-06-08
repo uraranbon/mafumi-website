@@ -9,7 +9,7 @@ export default function shopInfo() {
         <div className={styles.image}>
           <figure>
             <img
-              src="/shop.jpg"
+              src="/sources/image/shop.jpg"
               alt=""
               fill={true}
             />

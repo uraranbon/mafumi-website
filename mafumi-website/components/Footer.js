@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="innerArea">
         <Link href="/" className={styles.logo}>
           <img
-            src="../logo.png"
+            src="/sources/image/logo.png"
             alt="MAFUMI COFFEE Since 2016"
             width="80"
             height="80"
