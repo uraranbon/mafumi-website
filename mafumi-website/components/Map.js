@@ -7,11 +7,11 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 35.6954000,
+  lat: 35.6973000,
   lng: 139.7619257,
 };
 
-const zoom = 17;
+const zoom = 16;
 
 const mapStyles = [
   {
@@ -64,7 +64,7 @@ export default function Map() {
           zoom={zoom}
           options={options}
         >
-          <MarkerF position={position} label={"眞踏珈琲店"} />
+          <MarkerF position={position} icon={"../sources/image/mapIcon.png"} />
         </GoogleMap>
       </LoadScript>
       <div className={styles.mapInfo}>

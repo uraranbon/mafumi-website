@@ -26,10 +26,29 @@
       }
     }
     a {
-      font-size: 14px;
+      font-size: 16px;
+      position: relative;
+      padding-bottom: 4px;
+      display: block;
+      font-family: 'Cormorant Garamond';
       @include sp {
-        display: block;
         text-align: center;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: rgba($color: #fff, $alpha: 0.3);
+      }
+      &:hover {
+        &:before {
+          @include pc {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -46,6 +65,7 @@
     th,
     td {
       font-size: 14px;
+      font-family: "Shippori Mincho";
     }
     th {
       text-align: left;
@@ -59,7 +79,8 @@
   .copyright {
     margin-top: 60px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: 'Cormorant Garamond';
     @include sp {
       margin-top: 40px;
       font-size: 11px;

@@ -47,10 +47,10 @@ export default function Header() {
           <ul className={styles.links}>
             <li><Link href="/about" onClick={closeNav}>About Us</Link></li>
             <li><Link href="/menu" onClick={closeNav}>Menu</Link></li>
-            <li><Link href="/access" onClick={closeNav}>Access</Link></li>
+            <li><Link href="/#access" onClick={closeNav}>Access</Link></li>
             <li><Link href="/faq" onClick={closeNav}>FAQ</Link></li>
             <li><Link href="/recipe" onClick={closeNav}>Recipe</Link></li>
-            <li><Link href="https://mafumicoffee.square.site/" target='_blank' onClick={closeNav}>Online Shop</Link></li>
+            <li><Link href="/beans" onClick={closeNav}>Online Shop</Link></li>
           </ul>
         </nav>
       </div>

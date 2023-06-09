@@ -9,6 +9,9 @@ export default function Meta({pageTitle}) {
   return (
     <Head>
       <title>{title}</title>
+      <link rel="shortcut icon" href="/sources/image/favicon.ico" />
+      <link rel="apple-touch-icon" href="/sources/image/apple-touch-icon.png" sizes="180x180" />
+      <link rel="icon" type="image/png" href="/sources/image/android-chrome.png" sizes="192x192" />
       <link rel="canonical" href="" />
       <meta property="og:locale" content="ja_JP" />
       <meta property="og:type" content="website" />
@@ -16,7 +19,7 @@ export default function Meta({pageTitle}) {
       <meta property="og:url" content="http://coffeemafumi.html.xdomain.jp/" />
       <meta property="og:description" content="" />
       <meta property="og:site_name" content={siteDescription} />
-      <meta property="og:image" content="http://coffeemafumi.html.xdomain.jp/img/ogp.jpg" />
+      <meta property="og:image" content="http://coffeemafumi.html.xdomain.jp/sources/image/ogp.jpg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:type" content="image/jpeg" />

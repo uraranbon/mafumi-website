@@ -17,10 +17,10 @@ export default function Footer() {
         <ul className={styles.links}>
           <li><Link href="/about">About Us</Link></li>
           <li><Link href="/menu">Menu</Link></li>
-          <li><Link href="/access">Access</Link></li>
+          <li><Link href="/#access">Access</Link></li>
           <li><Link href="/faq">FAQ</Link></li>
           <li><Link href="/recipe">Recipe</Link></li>
-          <li><Link href="https://mafumicoffee.square.site/" target='_blank'>Online Shop</Link></li>
+          <li><Link href="/beans">Online Shop</Link></li>
         </ul>
         <table  className={styles.info}>
           <tbody>

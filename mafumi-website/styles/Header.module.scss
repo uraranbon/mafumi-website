@@ -39,10 +39,11 @@
     transition: transform 0.3s;
   }
   a {
-    font-size: 14px;
+    font-size: 18px;
     position: relative;
     padding-bottom: 4px;
     display: block;
+    font-family: 'Cormorant Garamond';
     @include sp {
       padding: 10px 0;
       text-align: center;

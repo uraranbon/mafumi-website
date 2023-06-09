@@ -9,6 +9,7 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
+  exportTrailingSlash: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },

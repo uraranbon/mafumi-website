@@ -1,0 +1,37 @@
+@import "./styles/Mixin.scss";
+
+.thumbnail {
+  position: relative;
+  width: calc(100% - 600px);
+  margin: 0 auto 40px;
+  img {
+    width: 100%;
+    object-fit: cover;
+    @include sp {
+      height: 200px;
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  th, td {
+    padding: 10px;
+    border: 1px solid rgba($color: #fff, $alpha: 0.3);
+  }
+  th {
+    text-align: left;
+    width: 20%;
+  }
+  td {
+    width: 80%;
+  }
+}
+
+p + .table {
+  margin-top: 1em;
+}

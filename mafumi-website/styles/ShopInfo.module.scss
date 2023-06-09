@@ -42,6 +42,7 @@
   th {
     text-align: left;
     vertical-align: top;
+    font-family: "Shippori Mincho";
     @include pc {
       empty-cells: 30%;
     }
@@ -60,3 +61,4 @@
     }
   }
 }
+

@@ -25,15 +25,17 @@
     display: block;
   }
   .en {
-    font-size: 50px;
+    font-size: 56px;
     line-height: 1;
+    font-family: 'Cormorant Garamond';
     @include sp {
       font-size: 20px;
     }
   }
   .ja {
-    margin-top: 10px;
+    margin-top: 2px;
     font-size: 18px;
+    font-family: "Shippori Mincho";
     @include sp {
       font-size: 14px;
     }
