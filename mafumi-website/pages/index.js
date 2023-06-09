@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MainVisual from '../components/MainVisual'
 import Message from '../components/Message'
+import PageNav from '../components/PageNav'
 import Gallery from '../components/Gallery'
 import Map from '../components/Map'
 import ShopInfo from '../components/ShopInfo'
@@ -19,9 +20,41 @@ export default function Home() {
       <main>
         <MainVisual />
         <Message />
-        <Gallery />
+        <section className="sectionArea">
+          <div className="innerArea">
+            <PageNav
+              linkTo="/menu"
+              imageName="/sources/image/menu/coffee_img_01.jpg"
+              title="Coffee"
+              content={<>ブラジル、サントスNo.2、<br />スクリーン19番を使用した<br />ストレート珈琲をご用意しております。<br /><br />ブラジルの苦み、そしてその中にある<br />仄かな甘味を、堪能ください。</>}
+              linkName="Menu"
+            />
+            <PageNav
+              linkTo="/about"
+              imageName="/sources/image/pageNav/nav_books.jpg"
+              title="Books"
+              content={<>約3,000冊の本に囲まれながら<br />珈琲をお楽しみいただけます。</>}
+              linkName="About Us"
+            />
+            <PageNav
+              linkTo="#access"
+              imageName="/sources/image/pageNav/nav_access.jpg"
+              title="Access"
+              content="店舗情報はこちらからご確認ください。"
+              linkName="Shop Information"
+            />
+            <PageNav
+              linkTo="/beans"
+              imageName="/sources/image/pageNav/nav_beans.jpg"
+              title="Beans"
+              content={<>珈琲豆をご購入いただける<br />オンラインショップを用意しております。</>}
+              linkName="Online Shop"
+            />
+          </div>
+        </section>
         <div className={styles.bgWrap}>
-          <section className="sectionArea">
+        <Gallery />
+          <section className="sectionArea" id='access'>
             <div className="innerArea">
               <ShopInfo />
             </div>
