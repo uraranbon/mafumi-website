@@ -44,7 +44,7 @@
     vertical-align: top;
     font-family: "Shippori Mincho";
     @include pc {
-      empty-cells: 30%;
+      width: 30%;
     }
     @include sp {
       padding-top: 10px;

@@ -1,21 +1,19 @@
+
 import Link from 'next/link'
-import Meta from '../../components/Meta'
-import KeyVisual from '../../components/KeyVisual'
-// import Image from 'next/image'
+import PageLayout from '../../components/layout/PageLayout'
 import PageButtonMenu from '../../components/PageButtonMenu'
 import PageButtonFaq from '../../components/PageButtonFaq'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import styles from '../../styles/OnlineShop.module.scss'
 
-export default function Recipe() {
+
+export default function Beans() {
   return (
     <>
-    <Meta pageTitle="Online Shop" />
-      <Header />
-      <main>
-        <KeyVisual title ="Online Shop" imageName="/sources/image/keyVisual/bg_beans.jpg" />
-        <section className="sectionArea">
+      <PageLayout
+        pageEn="Online Shop"
+        kvImage="/sources/image/keyVisual/bg_beans.jpg"
+        pageContents={
+          <section className="sectionArea">
           <div className="innerArea">
             <div className="contentWrap">
               <h2 className="title01">自家焙煎珈琲豆</h2>
@@ -75,8 +73,8 @@ export default function Recipe() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
+        }
+      />
     </>
   )
 }

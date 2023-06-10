@@ -1,10 +1,7 @@
-import Meta from '../../components/Meta'
-import KeyVisual from '../../components/KeyVisual'
+import PageLayout from '../../components/layout/PageLayout'
 // import Image from 'next/image'
 import PageButtonMenu from '../../components/PageButtonMenu'
 import PageButtonShop from '../../components/PageButtonShop'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import styles from '../../styles/Menu.module.scss'
 
 export default function Recipe() {
@@ -64,11 +61,10 @@ export default function Recipe() {
 
 
   return (
-    <>
-    <Meta pageTitle="Recipe" />
-      <Header />
-      <main>
-        <KeyVisual title ="Recipe" imageName="/sources/image/keyVisual/bg_coffee.jpg" />
+    <PageLayout
+      pageEn="Recipe"
+      kvImage="/sources/image/keyVisual/bg_coffee.jpg"
+      pageContents={
         <section className="sectionArea">
           <div className="innerArea">
             <div className="contentWrap">
@@ -128,8 +124,7 @@ export default function Recipe() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      }
+    />
   )
 }

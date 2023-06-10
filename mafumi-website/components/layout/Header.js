@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 // import Image from 'next/image'
-import styles from '../styles/Header.module.scss'
+import styles from '../../styles/Header.module.scss'
 
 export default function Header() {
   const [navIsOpen, setNavIsOpen] = useState(false)
@@ -45,12 +45,12 @@ export default function Header() {
             />
           </Link>
           <ul className={styles.links}>
-            <li><Link href="/about" onClick={closeNav}>About Us</Link></li>
-            <li><Link href="/menu" onClick={closeNav}>Menu</Link></li>
+            <li><Link href="/about/" onClick={closeNav}>About Us</Link></li>
+            <li><Link href="/menu/" onClick={closeNav}>Menu</Link></li>
             <li><Link href="/#access" onClick={closeNav}>Access</Link></li>
-            <li><Link href="/faq" onClick={closeNav}>FAQ</Link></li>
-            <li><Link href="/recipe" onClick={closeNav}>Recipe</Link></li>
-            <li><Link href="/beans" onClick={closeNav}>Online Shop</Link></li>
+            <li><Link href="/faq/" onClick={closeNav}>FAQ</Link></li>
+            <li><Link href="/recipe/" onClick={closeNav}>Recipe</Link></li>
+            <li><Link href="/beans/" onClick={closeNav}>Online Shop</Link></li>
           </ul>
         </nav>
       </div>

@@ -4,7 +4,7 @@ import styles from '../styles/PageButton.module.scss'
 
 export default function PageButtonFaq() {
   return (
-    <Link href="/faq" className={styles.pageButton}>
+    <Link href="/faq/" className={styles.pageButton}>
       <figure>
         <img
           src="/sources/image/pageButton/faq.jpg"

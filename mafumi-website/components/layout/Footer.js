@@ -1,6 +1,6 @@
 import Link from 'next/link'
 // import Image from 'next/image'
-import styles from '../styles/Footer.module.scss'
+import styles from '../../styles/Footer.module.scss'
 
 export default function Footer() {
   return (
@@ -15,12 +15,12 @@ export default function Footer() {
           />
         </Link>
         <ul className={styles.links}>
-          <li><Link href="/about">About Us</Link></li>
-          <li><Link href="/menu">Menu</Link></li>
+          <li><Link href="/about/">About Us</Link></li>
+          <li><Link href="/menu/">Menu</Link></li>
           <li><Link href="/#access">Access</Link></li>
-          <li><Link href="/faq">FAQ</Link></li>
-          <li><Link href="/recipe">Recipe</Link></li>
-          <li><Link href="/beans">Online Shop</Link></li>
+          <li><Link href="/faq/">FAQ</Link></li>
+          <li><Link href="/recipe/">Recipe</Link></li>
+          <li><Link href="/beans/">Online Shop</Link></li>
         </ul>
         <table  className={styles.info}>
           <tbody>

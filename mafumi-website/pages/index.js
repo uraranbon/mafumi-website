@@ -1,6 +1,6 @@
 import Meta from '../components/Meta'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../components/layout/Header'
+import Footer from '../components/layout/Footer'
 import MainVisual from '../components/MainVisual'
 import Message from '../components/Message'
 import PageNav from '../components/PageNav'
@@ -9,6 +9,7 @@ import Map from '../components/Map'
 import ShopInfo from '../components/ShopInfo'
 import Sns from '../components/Sns'
 import styles from '../styles/Home.module.scss'
+import { motion } from "framer-motion"
 
 // import Image from 'next/image'
 
@@ -18,6 +19,12 @@ export default function Home() {
       <Meta />
       <Header />
       <main>
+        <motion.div
+          initial={{ opacity: 0 }} // 初期状態
+          animate={{ opacity: 1 }} // マウント時
+          exit={{ opacity: 0 }}    // アンマウント時
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
         <MainVisual />
         <Message />
         <section className="sectionArea">
@@ -62,6 +69,7 @@ export default function Home() {
           <Map />
           <Sns />
         </div>
+        </motion.div>
       </main>
       <Footer />
     </>

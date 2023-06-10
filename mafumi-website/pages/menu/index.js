@@ -1,20 +1,17 @@
-import Meta from '../../components/Meta'
-import KeyVisual from '../../components/KeyVisual'
+import PageLayout from '../../components/layout/PageLayout'
 import MenuItem from '../../components/MenuItem'
 import MenuImage from '../../components/MenuImage'
 import PageButtonFaq from '../../components/PageButtonFaq'
 import PageButtonShop from '../../components/PageButtonShop'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 
 export default function Menu() {
   return (
     <>
-      <Meta pageTitle="Menu" />
-      <Header />
-      <main>
-        <KeyVisual title ="Menu" imageName="/sources/image/keyVisual/bg_coffee.jpg" />
-        <section className="sectionArea">
+      <PageLayout
+        pageEn="Menu"
+        kvImage="/sources/image/keyVisual/bg_coffee.jpg"
+        pageContents={
+          <section className="sectionArea">
           <div className="innerArea">
 
             <div className="contentWrap" id='coffee'>
@@ -188,8 +185,8 @@ export default function Menu() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
+        }
+      />
     </>
   )
 }
