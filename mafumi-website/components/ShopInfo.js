@@ -4,14 +4,12 @@ import styles from '../styles/ShopInfo.module.scss'
 export default function shopInfo() {
   return (
     <div className={styles.shopInfo}>
-      <h2 className='title03'>Shop Information</h2>
       <div className={styles.shopWrap}>
         <div className={styles.image}>
           <figure>
             <img
               src="/sources/image/shop.jpg"
               alt=""
-              fill={true}
             />
           </figure>
         </div>

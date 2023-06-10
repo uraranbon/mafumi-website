@@ -219,13 +219,15 @@ dd {
 }
 
 .pageButtonWrap {
-  margin-top: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   @include sp {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  &.mt {
+    margin-top: 200px;
   }
 }
 

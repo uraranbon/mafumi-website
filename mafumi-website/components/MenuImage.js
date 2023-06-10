@@ -8,7 +8,6 @@ export default function MenuImage({imageName,title}) {
         <img
           src={imageName}
           alt={title}
-          fill={true}
         />
       </figure>
       <p className={styles.title}>{title}</p>

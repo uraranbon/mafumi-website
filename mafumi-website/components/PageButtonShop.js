@@ -9,7 +9,6 @@ export default function PageButtonShop() {
         <img
           src="/sources/image/pageButton/shop.jpg"
           alt=""
-          fill={true}
         />
       </figure>
       <p className={styles.info}>

@@ -1,0 +1,35 @@
+
+import ShopInfo from '../../components/ShopInfo'
+import Map from '../../components/Map'
+import PageLayout from '../../components/layout/PageLayout'
+import PageButtonMenu from '../../components/PageButtonMenu'
+import PageButtonFaq from '../../components/PageButtonFaq'
+
+export default function Beans() {
+  return (
+    <>
+      <PageLayout
+        pageEn="Access"
+        kvImage="/sources/image/keyVisual/bg_beans.jpg"
+        pageContents={
+        <>
+          <section className="sectionArea">
+            <div className="innerArea">
+              <ShopInfo />
+            </div>
+          </section>
+          <Map />
+          <section className="sectionArea">
+            <div className="innerArea">
+              <div className="pageButtonWrap">
+                <PageButtonMenu />
+                <PageButtonFaq />
+              </div>
+            </div>
+          </section>
+        </>
+        }
+      />
+    </>
+  )
+}

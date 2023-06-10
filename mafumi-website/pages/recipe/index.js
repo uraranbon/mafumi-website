@@ -73,7 +73,6 @@ export default function Recipe() {
                 <img
                   src="/sources/image/menu/coffee_img_01.jpg"
                   alt="珈琲 琥珀"
-                  fill={true}
                 />
               </figure>
               <h3 className="title02">材料（2人分／200cc）</h3>
@@ -99,7 +98,6 @@ export default function Recipe() {
                 <img
                   src="/sources/image/menu/coffee_img_03.jpg"
                   alt="カフェ・アイランダイズ（ホット・アイス）"
-                  fill={true}
                 />
               </figure>
               <h3 className="title02">材料（1人分）</h3>
@@ -118,7 +116,7 @@ export default function Recipe() {
                 ))}
               </ul>
             </div>
-            <div className="pageButtonWrap">
+            <div className="pageButtonWrap mt">
               <PageButtonMenu />
               <PageButtonShop />
             </div>

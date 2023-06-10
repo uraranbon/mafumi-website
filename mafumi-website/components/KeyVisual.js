@@ -8,7 +8,6 @@ export default function KeyVisual({title,imageName}) {
         <img
           src={imageName}
           alt=""
-          fill={true}
         />
       </figure>
       <div className="innerArea">

@@ -31,7 +31,7 @@ export default function Faq() {
             <Accordion heading="支払いは何が使えますか？" content="現金、クレジットカード、電子マネー、PayPayをご利用いただけます。" />
             <Accordion heading="忘れものをしました。" content={<><a href="mailto:mafumi.coffee@gmail.com">メール</a>あるいは<a href="https://twitter.com/mafumicoffee" target='_blank'>TwitterのDM</a>にてご連絡ください。</>} />
           </div>
-          <div className="pageButtonWrap">
+          <div className="pageButtonWrap mt">
             <PageButtonMenu />
             <PageButtonShop />
           </div>

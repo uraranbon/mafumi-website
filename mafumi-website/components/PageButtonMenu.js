@@ -9,7 +9,6 @@ export default function PageButtonMenu() {
         <img
           src="/sources/image/pageButton/menu.jpg"
           alt=""
-          fill={true}
         />
       </figure>
       <p className={styles.info}>

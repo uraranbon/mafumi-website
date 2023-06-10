@@ -34,23 +34,21 @@ export default function Header() {
             <span className={styles.bar}></span>
           </button>
 
-          <Link href="/" className={styles.logo}>
+          <Link href="/" className={styles.logo} scroll={false}>
             <img
               src="/sources/image/logo.png"
               alt="MAFUMI COFFEE Since 2016"
               width="80"
               height="80"
-              priority
-              placeholder='blur'
             />
           </Link>
           <ul className={styles.links}>
-            <li><Link href="/about/" onClick={closeNav}>About Us</Link></li>
-            <li><Link href="/menu/" onClick={closeNav}>Menu</Link></li>
-            <li><Link href="/#access" onClick={closeNav}>Access</Link></li>
-            <li><Link href="/faq/" onClick={closeNav}>FAQ</Link></li>
-            <li><Link href="/recipe/" onClick={closeNav}>Recipe</Link></li>
-            <li><Link href="/beans/" onClick={closeNav}>Online Shop</Link></li>
+            <li><Link href="/about/" onClick={closeNav} scroll={false}>About Us</Link></li>
+            <li><Link href="/menu/" onClick={closeNav} scroll={false}>Menu</Link></li>
+            <li><Link href="/access" onClick={closeNav} scroll={false}>Access</Link></li>
+            <li><Link href="/faq/" onClick={closeNav} scroll={false}>FAQ</Link></li>
+            <li><Link href="/recipe/" onClick={closeNav} scroll={false}>Recipe</Link></li>
+            <li><Link href="/beans/" onClick={closeNav} scroll={false}>Online Shop</Link></li>
           </ul>
         </nav>
       </div>

@@ -15,12 +15,12 @@ export default function Footer() {
           />
         </Link>
         <ul className={styles.links}>
-          <li><Link href="/about/">About Us</Link></li>
-          <li><Link href="/menu/">Menu</Link></li>
-          <li><Link href="/#access">Access</Link></li>
-          <li><Link href="/faq/">FAQ</Link></li>
-          <li><Link href="/recipe/">Recipe</Link></li>
-          <li><Link href="/beans/">Online Shop</Link></li>
+          <li><Link href="/about/" scroll={false}>About Us</Link></li>
+          <li><Link href="/menu/" scroll={false}>Menu</Link></li>
+          <li><Link href="/access" scroll={false}>Access</Link></li>
+          <li><Link href="/faq/" scroll={false}>FAQ</Link></li>
+          <li><Link href="/recipe/" scroll={false}>Recipe</Link></li>
+          <li><Link href="/beans/" scroll={false}>Online Shop</Link></li>
         </ul>
         <table  className={styles.info}>
           <tbody>

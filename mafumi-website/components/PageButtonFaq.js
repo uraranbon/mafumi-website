@@ -9,7 +9,6 @@ export default function PageButtonFaq() {
         <img
           src="/sources/image/pageButton/faq.jpg"
           alt=""
-          fill={true}
         />
       </figure>
       <p className={styles.info}>

@@ -179,7 +179,7 @@ export default function Menu() {
                 <MenuItem ja="瓶詰水瑠璃" en="Bottled Cafe Lapis Lazuli (Iced Coffee)" price="1,500" />
               </div>
             </div>
-            <div className="pageButtonWrap">
+            <div className="pageButtonWrap mt">
               <PageButtonFaq />
               <PageButtonShop />
             </div>

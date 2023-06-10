@@ -67,7 +67,7 @@ export default function Beans() {
                 </tbody>
               </table>
             </div>
-            <div className="pageButtonWrap">
+            <div className="pageButtonWrap mt">
               <PageButtonMenu />
               <PageButtonFaq />
             </div>
