@@ -20,7 +20,7 @@ export default function Footer() {
           <li><Link href="/access" scroll={false}>Access</Link></li>
           <li><Link href="/faq/" scroll={false}>FAQ</Link></li>
           <li><Link href="/recipe/" scroll={false}>Recipe</Link></li>
-          <li><Link href="/beans/" scroll={false}>Online Shop</Link></li>
+          <li><Link href="https://mafumicoffee.square.site/" target='_blank'>Online Shop</Link></li>
         </ul>
         <div className={styles.wrap}>
           <table className={styles.info}>

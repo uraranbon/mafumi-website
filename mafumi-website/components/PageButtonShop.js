@@ -4,7 +4,7 @@ import styles from '../styles/PageButton.module.scss'
 
 export default function PageButtonShop() {
   return (
-    <Link href="/beans/" className={styles.pageButton} scroll={false}>
+    <Link href="https://mafumicoffee.square.site/" target='_blank' className={styles.pageButton} scroll={false}>
       <figure>
         <img
           src="/sources/image/pageButton/shop.jpg"

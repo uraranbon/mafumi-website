@@ -51,7 +51,7 @@ export default function Home() {
               linkName="Shop Information"
             />
             <PageNav
-              linkTo="/beans"
+              linkTo="https://mafumicoffee.square.site/"
               imageName="/sources/image/pageNav/nav_beans.jpg"
               title="Beans"
               content={<>珈琲豆をご購入いただける<br />オンラインショップを用意しております。</>}

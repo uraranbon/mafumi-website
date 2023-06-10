@@ -48,7 +48,7 @@ export default function Header() {
             <li><Link href="/access" onClick={closeNav} scroll={false}>Access</Link></li>
             <li><Link href="/faq/" onClick={closeNav} scroll={false}>FAQ</Link></li>
             <li><Link href="/recipe/" onClick={closeNav} scroll={false}>Recipe</Link></li>
-            <li><Link href="/beans/" onClick={closeNav} scroll={false}>Online Shop</Link></li>
+            <li><Link href="https://mafumicoffee.square.site/" target='_blank' onClick={closeNav}>Online Shop</Link></li>
           </ul>
         </nav>
       </div>
