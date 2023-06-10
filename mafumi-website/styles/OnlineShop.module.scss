@@ -10,7 +10,7 @@
     width: 100%;
     object-fit: cover;
     @include sp {
-      height: 200px;
+      height: 250px;
     }
   }
 }
@@ -23,22 +23,29 @@
 
 .table {
   width: 100%;
-  th, td {
+  tr:last-child {
+    th,
+    td {
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+    }
+  }
+  th,
+  td {
     padding: 14px;
-    border: 1px solid rgba($color: #fff, $alpha: 0.3);
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.3);
     word-break: break-all;
   }
   th {
     text-align: left;
     width: 25%;
     @include sp {
-      width: 40%;
+      width: 30%;
     }
   }
   td {
     width: 75%;
     @include sp {
-      width: 60%;
+      width: 70%;
     }
   }
 }

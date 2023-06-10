@@ -93,7 +93,7 @@ export default function Recipe() {
               </ul>
             </div>
             <div className="contentWrap">
-              <h2 className="title01">カフェ・アイランダイズ（ホット・アイス）</h2>
+              <h2 className="title01">カフェ・アイランダイズ<small>（ホット・アイス）</small></h2>
               <figure className={styles.thumbnail}>
                 <img
                   src="/sources/image/menu/coffee_img_03.jpg"

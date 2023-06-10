@@ -28,6 +28,7 @@ html.md-theme-default {
 
 body {
   margin: 0;
+  background: linear-gradient(to bottom, #2d0000, #540101);
 }
 
 *,
@@ -242,6 +243,9 @@ dd {
     left: 0;
     bottom: 0;
   }
+  small {
+    display: inline-block;
+  }
 }
 
 .title02 {
@@ -266,7 +270,7 @@ dd {
   margin-bottom: 60px;
   position: relative;
   @include sp {
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 30px;
   }
 }
