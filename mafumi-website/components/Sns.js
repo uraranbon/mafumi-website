@@ -27,9 +27,18 @@ export default function Sns() {
               さまざまな情報を発信しています。<br />
               ぜひフォローしてください。
             </p>
-            <Link href="https://twitter.com/mafumicoffee" target='_blank' className="button01">Twitter</Link>
-            <Link href="https://www.facebook.com/mafumi.coffee" target='_blank' className="button01">Facebook</Link>
-            <Link href="https://www.instagram.com/mafumi.coffee/?hl=ja" target='_blank' className="button01">Instagram</Link>
+            <Link href="https://twitter.com/mafumicoffee" target='_blank' className="button01">
+              <figure><img src="/sources/image/icon_twitter.svg" alt="" /></figure>
+              Twitter
+            </Link>
+            <Link href="https://www.facebook.com/mafumi.coffee" target='_blank' className="button01">
+              <figure><img src="/sources/image/icon_facebook.svg" alt="" /></figure>
+              Facebook
+            </Link>
+            <Link href="https://www.instagram.com/mafumi.coffee/?hl=ja" target='_blank' className="button01">
+              <figure><img src="/sources/image/icon_instagram.svg" alt="" /></figure>
+              Instagram
+            </Link>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="innerArea">
-        <Link href="/" className={styles.logo}>
+        <Link href="/" className={styles.logo} scroll={false}>
           <img
             src="/sources/image/logo.png"
             alt="MAFUMI COFFEE Since 2016"
@@ -22,22 +22,35 @@ export default function Footer() {
           <li><Link href="/recipe/" scroll={false}>Recipe</Link></li>
           <li><Link href="/beans/" scroll={false}>Online Shop</Link></li>
         </ul>
-        <table  className={styles.info}>
-          <tbody>
-            <tr>
-              <th>住所</th>
-              <td>〒101-0052 東京都千代田区神田小川町3-1-7</td>
-            </tr>
-            <tr>
-              <th>営業時間</th>
-              <td>平日・土　12:00 - 23:00（L.0. 22:30）<br />日・祝　　12:00 - 21:00（L.0. 20:30）</td>
-            </tr>
-            <tr>
-              <th>定休日</th>
-              <td>年中無休</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className={styles.wrap}>
+          <table className={styles.info}>
+            <tbody>
+              <tr>
+                <th>住所</th>
+                <td>〒101-0052 東京都千代田区神田小川町3-1-7</td>
+              </tr>
+              <tr>
+                <th>営業時間</th>
+                <td>平日・土　12:00 - 23:00（L.0. 22:30）<br />日・祝　　12:00 - 21:00（L.0. 20:30）</td>
+              </tr>
+              <tr>
+                <th>定休日</th>
+                <td>年中無休</td>
+              </tr>
+            </tbody>
+          </table>
+          <div className={styles.snsLinks}>
+            <Link href="https://twitter.com/mafumicoffee" target='_blank'>
+              <figure><img src="/sources/image/icon_twitter.svg" alt="" /></figure>
+            </Link>
+            <Link href="https://www.facebook.com/mafumi.coffee" target='_blank'>
+              <figure><img src="/sources/image/icon_facebook.svg" alt="" /></figure>
+            </Link>
+            <Link href="https://www.instagram.com/mafumi.coffee/?hl=ja" target='_blank'>
+              <figure><img src="/sources/image/icon_instagram.svg" alt="" /></figure>
+            </Link>
+          </div>
+        </div>
         <p className={styles.copyright}>©2016 Mafumi Coffee All Rights Reserved.</p>
       </div>
     </footer>
