@@ -41,13 +41,13 @@ export default function Footer() {
           </table>
           <div className={styles.snsLinks}>
             <Link href="https://twitter.com/mafumicoffee" target='_blank'>
-              <figure><img src="/sources/image/icon_twitter.svg" alt="" /></figure>
+              <figure><img src="/sources/image/icon_twitter.png" alt="" /></figure>
             </Link>
             <Link href="https://www.facebook.com/mafumi.coffee" target='_blank'>
-              <figure><img src="/sources/image/icon_facebook.svg" alt="" /></figure>
+              <figure><img src="/sources/image/icon_facebook.png" alt="" /></figure>
             </Link>
             <Link href="https://www.instagram.com/mafumi.coffee/?hl=ja" target='_blank'>
-              <figure><img src="/sources/image/icon_instagram.svg" alt="" /></figure>
+              <figure><img src="/sources/image/icon_instagram.png" alt="" /></figure>
             </Link>
           </div>
         </div>

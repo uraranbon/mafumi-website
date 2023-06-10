@@ -28,15 +28,15 @@ export default function Sns() {
               ぜひフォローしてください。
             </p>
             <Link href="https://twitter.com/mafumicoffee" target='_blank' className="button01">
-              <figure><img src="/sources/image/icon_twitter.svg" alt="" /></figure>
+              <figure><img src="/sources/image/icon_twitter.png" alt="" /></figure>
               Twitter
             </Link>
             <Link href="https://www.facebook.com/mafumi.coffee" target='_blank' className="button01">
-              <figure><img src="/sources/image/icon_facebook.svg" alt="" /></figure>
+              <figure><img src="/sources/image/icon_facebook.png" alt="" /></figure>
               Facebook
             </Link>
             <Link href="https://www.instagram.com/mafumi.coffee/?hl=ja" target='_blank' className="button01">
-              <figure><img src="/sources/image/icon_instagram.svg" alt="" /></figure>
+              <figure><img src="/sources/image/icon_instagram.png" alt="" /></figure>
               Instagram
             </Link>
           </div>

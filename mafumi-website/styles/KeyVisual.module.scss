@@ -20,15 +20,12 @@
     }
   }
   .title {
-    font-size: 120px;
+    font-size: clamp(3.75rem, 2.367rem + 6.01vw, 7.5rem); //120-60
     line-height: 1;
     position: absolute;
     left: 0;
     bottom: 0;
     font-family: 'Cormorant Garamond';
     margin-bottom: -0.5em;
-    @include sp {
-      font-size: 60px;
-    }
   }
 }

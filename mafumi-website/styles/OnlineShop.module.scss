@@ -2,8 +2,10 @@
 
 .thumbnail {
   position: relative;
-  width: calc(100% - 600px);
   margin: 0 auto 40px;
+  @include pc {
+    width: calc(100% - 600px);
+  }
   img {
     width: 100%;
     object-fit: cover;
@@ -14,7 +16,9 @@
 }
 
 .intro {
-  text-align: center;
+  @include pc {
+    text-align: center;
+  }
 }
 
 .table {
@@ -22,13 +26,20 @@
   th, td {
     padding: 14px;
     border: 1px solid rgba($color: #fff, $alpha: 0.3);
+    word-break: break-all;
   }
   th {
     text-align: left;
     width: 25%;
+    @include sp {
+      width: 40%;
+    }
   }
   td {
     width: 75%;
+    @include sp {
+      width: 60%;
+    }
   }
 }
 

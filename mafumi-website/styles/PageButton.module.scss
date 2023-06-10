@@ -4,7 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba($color: #000, $alpha: 0.3);
+  background: rgba($color: #2b0200, $alpha: 0.5);
+  &:hover {
+    @include pc {
+      background: rgba($color: #2b0200, $alpha: 1);
+    }
+  }
   figure {
     position: relative;
     width: 160px;
@@ -18,8 +23,10 @@
 
 .info {
   width: calc(100% - 200px);
+  padding: 10px 20px 10px 0;
   @include sp {
     width: calc(100% - 120px);
+
   }
   .en, .ja {
     display: block;
@@ -28,16 +35,11 @@
     font-size: 56px;
     line-height: 1;
     font-family: 'Cormorant Garamond';
-    @include sp {
-      font-size: 20px;
-    }
+    font-size: clamp(1.25rem, 0.42rem + 3.61vw, 3.5rem); //56-22
   }
   .ja {
     margin-top: 2px;
-    font-size: 18px;
     font-family: "Shippori Mincho";
-    @include sp {
-      font-size: 14px;
-    }
+    font-size: clamp(0.875rem, 0.783rem + 0.4vw, 1.125rem); //18-14
   }
 }

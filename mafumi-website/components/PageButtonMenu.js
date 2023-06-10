@@ -4,7 +4,7 @@ import styles from '../styles/PageButton.module.scss'
 
 export default function PageButtonMenu() {
   return (
-    <Link href="/menu/" className={styles.pageButton}>
+    <Link href="/menu/" className={styles.pageButton} scroll={false}>
       <figure>
         <img
           src="/sources/image/pageButton/menu.jpg"
