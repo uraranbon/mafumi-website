@@ -11,7 +11,8 @@ export default function Beans() {
     <>
       <PageLayout
         pageEn="About Us"
-        kvImage="/sources/image/keyVisual/bg_beans.jpg"
+        kvImage="/sources/image/keyVisual/bg_books.jpg"
+        kvImageSp="/sources/image/keyVisual/bg_books_sp.jpg"
         pageContents={
         <>
           <section className="sectionArea">

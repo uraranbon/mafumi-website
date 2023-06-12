@@ -4,7 +4,7 @@ import Footer from './Footer'
 import KeyVisual from '../KeyVisual'
 import { motion } from "framer-motion"
 
-export default function PageLayout({pageEn,kvImage,pageContents}) {
+export default function PageLayout({pageEn,kvImage,kvImageSp,pageContents}) {
   return (
     <>
       <Meta pageTitle={pageEn} />
@@ -16,7 +16,7 @@ export default function PageLayout({pageEn,kvImage,pageContents}) {
           transition={{ duration: 0.5, ease: "ease" }}
         >
         <main>
-          <KeyVisual title={pageEn} imageName={kvImage} />
+          <KeyVisual title={pageEn} imageName={kvImage} imageNameSp={kvImageSp} />
           {pageContents}
         </main>
         <Footer />

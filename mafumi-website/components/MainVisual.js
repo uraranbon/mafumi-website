@@ -7,7 +7,7 @@ export default function MainVisual() {
       <div className={styles.background}>
         <video
           src={require('../public/sources/video/kv.mp4')}
-          poster={true}
+          poster="true"
           playsInline
           muted
           autoPlay

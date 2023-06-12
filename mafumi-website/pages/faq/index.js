@@ -9,6 +9,7 @@ export default function Faq() {
     <PageLayout
       pageEn="FAQ"
       kvImage="/sources/image/keyVisual/bg_coffee.jpg"
+      kvImageSp="/sources/image/keyVisual/bg_coffee_sp.jpg"
       pageContents={
         <section className="sectionArea">
         <div className="innerArea">

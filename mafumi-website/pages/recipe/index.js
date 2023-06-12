@@ -63,7 +63,8 @@ export default function Recipe() {
   return (
     <PageLayout
       pageEn="Recipe"
-      kvImage="/sources/image/keyVisual/bg_coffee.jpg"
+      kvImage="/sources/image/keyVisual/bg_drip.jpg"
+      kvImageSp="/sources/image/keyVisual/bg_drip_sp.jpg"
       pageContents={
         <section className="sectionArea">
           <div className="innerArea">

@@ -10,7 +10,8 @@ export default function Beans() {
     <>
       <PageLayout
         pageEn="Access"
-        kvImage="/sources/image/keyVisual/bg_beans.jpg"
+        kvImage="/sources/image/keyVisual/bg_flower.jpg"
+        kvImageSp="/sources/image/keyVisual/bg_flower_sp.jpg"
         pageContents={
         <>
           <section className="sectionArea">

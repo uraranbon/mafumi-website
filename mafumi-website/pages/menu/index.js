@@ -9,7 +9,8 @@ export default function Menu() {
     <>
       <PageLayout
         pageEn="Menu"
-        kvImage="/sources/image/keyVisual/bg_coffee.jpg"
+        kvImage="/sources/image/keyVisual/bg_glass.jpg"
+        kvImageSp="/sources/image/keyVisual/bg_glass_sp.jpg"
         pageContents={
           <section className="sectionArea">
           <div className="innerArea">

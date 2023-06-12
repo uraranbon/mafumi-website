@@ -31,7 +31,7 @@ export default function Home() {
           <div className="innerArea">
             <PageNav
               linkTo="/menu"
-              imageName="/sources/image/menu/coffee_img_01.jpg"
+              imageName="/sources/image/pageNav/nav_coffee.jpg"
               title="Coffee"
               content={<>ブラジル、サントスNo.2、<br />スクリーン19番を使用した<br />ストレート珈琲をご用意しております。<br /><br />ブラジルの苦み、そしてその中にある<br />仄かな甘味を、堪能ください。</>}
               linkName="Menu"
