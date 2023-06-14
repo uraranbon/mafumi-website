@@ -31,8 +31,8 @@
     height: 500px;
     overflow: hidden;
     @include sp {
-      border-radius: 100px;
-      height: 300px;
+      border-radius: 200px;
+      height: 400px;
     }
     img {
       width: 100%;
@@ -55,10 +55,10 @@
 }
 
 .content {
-  font-family: "Shippori Mincho";
+  // font-family: "Shippori Mincho";
   line-height: 1.8;
   @include sp {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -68,11 +68,14 @@
   font-family: "Cormorant Garamond";
   line-height: 1;
   font-size: 24px;
-  text-align: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @include pc {
+    text-align: right;
+  }
   @include sp {
+    font-size: 20px;
     margin-top: 20px;
   }
   &::after {

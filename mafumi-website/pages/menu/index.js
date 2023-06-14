@@ -111,7 +111,7 @@ export default function Menu() {
               <h2 className="title01">Liquor</h2>
               <div className="menuImageWrap">
                 <MenuImage imageName="/sources/image/menu/liquor_img_01.jpg" title="パーリンカ" />
-                <MenuImage imageName="/sources/image/menu/liquor_img_02.jpg" title="ウイスキィ（ザ グレンロセス" />
+                <MenuImage imageName="/sources/image/menu/liquor_img_02.jpg" title="ウイスキィ（ザ グレンロセス）" />
                 <MenuImage imageName="/sources/image/menu/liquor_img_03.jpg" title="コレクションの一部" />
               </div>
               <div className="menuWrap">

@@ -27,7 +27,7 @@ export default function Home() {
         >
         <MainVisual />
         <Message />
-        <section className="sectionArea">
+        <section className="sectionArea bgBrown">
           <div className="innerArea">
             <PageNav
               linkTo="/menu"

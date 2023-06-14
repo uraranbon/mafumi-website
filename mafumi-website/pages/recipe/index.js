@@ -72,7 +72,7 @@ export default function Recipe() {
               <h2 className="title01">珈琲 琥珀</h2>
               <figure className={styles.thumbnail}>
                 <img
-                  src="/sources/image/menu/coffee_img_01.jpg"
+                  src="/sources/image/recipe/coffee.jpg"
                   alt="珈琲 琥珀"
                 />
               </figure>
