@@ -64,7 +64,7 @@ export default function Map() {
           zoom={zoom}
           options={options}
         >
-          <MarkerF position={position} icon={"../sources/image/mapIcon.png"} />
+          <MarkerF position={position} icon={"../sources/image/mapIcon.svg"} />
         </GoogleMap>
       </LoadScript>
       <div className={styles.mapInfo}>

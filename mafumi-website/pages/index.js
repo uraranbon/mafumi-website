@@ -2,7 +2,6 @@ import Meta from '../components/Meta'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import MainVisual from '../components/MainVisual'
-import Message from '../components/Message'
 import PageNav from '../components/PageNav'
 import Gallery from '../components/Gallery'
 import Map from '../components/Map'
@@ -26,7 +25,6 @@ export default function Home() {
           transition={{ duration: 0.5, ease: "ease" }}
         >
         <MainVisual />
-        <Message />
         <section className="sectionArea bgBrown">
           <div className="innerArea">
             <PageNav

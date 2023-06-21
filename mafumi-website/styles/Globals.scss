@@ -226,6 +226,7 @@ dd {
   position: relative;
   @include sp {
     margin-top: 150px;
+    background-color: rgba($color: #2d0000, $alpha: 1);
   }
   &::before {
     content: "";
