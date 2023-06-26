@@ -2,7 +2,6 @@
 
 .keyVisual {
   height: 400px;
-  background-color: #ddd;
   position: relative;
   @include sp {
     height: 200px;
@@ -25,7 +24,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    font-family: 'Cormorant Garamond';
+    font-family: "Cormorant Garamond";
     margin-bottom: -0.5em;
   }
 }

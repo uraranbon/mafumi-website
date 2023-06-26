@@ -21,8 +21,8 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }} // 初期状態
           animate={{ opacity: 1 }} // マウント時
-          exit={{ opacity: 0 }}    // アンマウント時
-          transition={{ duration: 0.5, ease: "ease" }}
+          exit={{ opacity: 0 }}  // アンマウント時
+          transition={{ duration: 0.4 }}
         >
         <MainVisual />
         <section className="sectionArea bgBrown">
@@ -42,7 +42,7 @@ export default function Home() {
               linkName="About Us"
             />
             <PageNav
-              linkTo="#access"
+              linkTo="/access"
               imageName="/sources/image/pageNav/nav_access.jpg"
               title="Access"
               content="店舗情報はこちらからご確認ください。"

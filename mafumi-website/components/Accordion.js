@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react'
-import reactStringReplace from "react-string-replace";
 import styles from '../styles/Accordion.module.scss'
 
 export default function Accordion({heading,content}) {

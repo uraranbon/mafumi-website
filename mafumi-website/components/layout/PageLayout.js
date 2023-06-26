@@ -13,7 +13,7 @@ export default function PageLayout({pageEn,kvImage,kvImageSp,pageContents}) {
           initial={{ opacity: 0 }} // 初期状態
           animate={{ opacity: 1 }} // マウント時
           exit={{ opacity: 0 }}    // アンマウント時
-          transition={{ duration: 0.5, ease: "ease" }}
+          transition={{ duration: 0.4 }}
         >
         <main>
           <KeyVisual title={pageEn} imageName={kvImage} imageNameSp={kvImageSp} />

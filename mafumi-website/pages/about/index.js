@@ -1,6 +1,3 @@
-
-import ShopInfo from '../../components/ShopInfo'
-import Map from '../../components/Map'
 import PageLayout from '../../components/layout/PageLayout'
 import PageButtonMenu from '../../components/PageButtonMenu'
 import PageButtonFaq from '../../components/PageButtonFaq'
