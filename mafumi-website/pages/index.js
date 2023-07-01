@@ -19,10 +19,9 @@ export default function Home() {
       <Header />
       <main>
         <motion.div
-          initial={{ opacity: 0 }} // 初期状態
-          animate={{ opacity: 1 }} // マウント時
-          exit={{ opacity: 0 }}  // アンマウント時
-          transition={{ duration: 0.4 }}
+             initial={{ opacity: 0, transition: { duration: 0.4 } }} // 初期状態
+             animate={{ opacity: 1, transition: { duration: 0.4 } }} // マウント時
+             exit={{ opacity: 0, transition: { duration: 0 } }}    // アンマウント時
         >
         <MainVisual />
         <section className="sectionArea bgBrown">
@@ -30,30 +29,30 @@ export default function Home() {
             <PageNav
               linkTo="/menu"
               imageName="/sources/image/pageNav/nav_coffee.jpg"
-              title="Coffee"
+              title="お品書き"
               content={<>ブラジル、サントスNo.2、<br />スクリーン19番を使用した<br />ストレート珈琲をご用意しております。<br /><br />ブラジルの苦み、そしてその中にある<br />仄かな甘味を、堪能ください。</>}
-              linkName="Menu"
+              linkName="詳細はこちら"
             />
             <PageNav
               linkTo="/about"
               imageName="/sources/image/pageNav/nav_books.jpg"
-              title="Books"
+              title="眞踏珈琲店について"
               content={<>約3,000冊の本に囲まれながら<br />珈琲をお楽しみいただけます。</>}
-              linkName="About Us"
+              linkName="詳細はこちら"
             />
             <PageNav
               linkTo="/access"
               imageName="/sources/image/pageNav/nav_access.jpg"
-              title="Access"
+              title="店舗情報"
               content="店舗情報はこちらからご確認ください。"
-              linkName="Shop Information"
+              linkName="詳細はこちら"
             />
             <PageNav
               linkTo="https://mafumicoffee.square.site/"
               imageName="/sources/image/pageNav/nav_beans.jpg"
-              title="Beans"
+              title="オンラインショップ"
               content={<>珈琲豆をご購入いただける<br />オンラインショップを用意しております。</>}
-              linkName="Online Shop"
+              linkName="詳細はこちら"
             />
           </div>
         </section>
@@ -61,7 +60,7 @@ export default function Home() {
         <Gallery />
           <section className="sectionArea" id='access'>
             <div className="innerArea">
-            <h2 className='title03'>Shop Information</h2>
+            <h2 className='title03'>店舗情報</h2>
               <ShopInfo />
             </div>
           </section>

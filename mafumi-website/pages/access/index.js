@@ -9,7 +9,7 @@ export default function Beans() {
   return (
     <>
       <PageLayout
-        pageEn="Access"
+        pageEn="店舗情報"
         kvImage="/sources/image/keyVisual/bg_flower.jpg"
         kvImageSp="/sources/image/keyVisual/bg_flower_sp.jpg"
         pageContents={

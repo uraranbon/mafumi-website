@@ -46,14 +46,15 @@
     transition: transform 0.3s;
   }
   a {
-    font-size: 18px;
+    font-size: 14px;
     position: relative;
     display: block;
-    font-family: "Cormorant Garamond";
+    font-family: "Shippori Mincho";
+    padding-bottom: 4px;
     @include sp {
       padding: 10px 0;
       text-align: center;
-      background-color: rgba($color: #fff, $alpha: 0.3);
+      background-color: rgba($color: #fff, $alpha: 0.2);
     }
     &::before {
       content: "";

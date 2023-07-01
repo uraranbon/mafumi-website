@@ -11,10 +11,12 @@ export default function PageButtonFaq() {
           alt=""
         />
       </figure>
-      <p className={styles.info}>
-        <span className={styles.en}>FAQ</span>
-        <span className={styles.ja}>よくある質問はこちら</span>
-      </p>
+      <div className={styles.info}>
+        <p>
+          <span className={styles.ja}>よくあるご質問</span>
+          <span className={styles.en}>FAQ</span>
+        </p>
+      </div>
     </Link>
   )
 }

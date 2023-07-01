@@ -11,10 +11,12 @@ export default function PageButtonShop() {
           alt=""
         />
       </figure>
-      <p className={styles.info}>
-        <span className={styles.en}>Online Shop</span>
-        <span className={styles.ja}>豆のご購入はこちら</span>
-      </p>
+      <div className={styles.info}>
+        <p>
+          <span className={styles.ja}>オンラインショップ</span>
+          <span className={styles.en}>Online Shop</span>
+        </p>
+      </div>
     </Link>
   )
 }

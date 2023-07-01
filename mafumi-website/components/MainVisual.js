@@ -18,13 +18,12 @@ export default function MainVisual() {
               loop
             />
           </div>
-          <p className="text">
-            お酒を飲まない人のための<br />バーのような存在でありたい。<br /><br />
-            お店の片隅で閑か珈琲を飲む。<br />
-            読書に集中する。<br />
-            たまたま隣に腰掛ける知らない誰かと、<br />
-            とりとめもない無駄話に、ふける。
-          </p>
+          <div className='logo'>
+            <img
+              src="/sources/image/logoText.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -11,10 +11,12 @@ export default function PageButtonMenu() {
           alt=""
         />
       </figure>
-      <p className={styles.info}>
-        <span className={styles.en}>Menu</span>
-        <span className={styles.ja}>メニューはこちら</span>
-      </p>
+      <div className={styles.info}>
+        <p>
+          <span className={styles.ja}>お品書き</span>
+          <span className={styles.en}>Menu</span>
+        </p>
+      </div>
     </Link>
   )
 }

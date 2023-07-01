@@ -8,7 +8,7 @@ export default function Menu() {
   return (
     <>
       <PageLayout
-        pageEn="Menu"
+        pageEn="お品書き"
         kvImage="/sources/image/keyVisual/bg_glass.jpg"
         kvImageSp="/sources/image/keyVisual/bg_glass_sp.jpg"
         pageContents={

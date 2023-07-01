@@ -7,13 +7,24 @@ export default function Beans() {
   return (
     <>
       <PageLayout
-        pageEn="About Us"
+        pageEn="眞踏珈琲店について"
         kvImage="/sources/image/keyVisual/bg_books.jpg"
         kvImageSp="/sources/image/keyVisual/bg_books_sp.jpg"
         pageContents={
         <>
           <section className="sectionArea">
             <div className="innerArea">
+              <div className="contentWrap">
+                <h2 className='title03'>Message</h2>
+                <p className={styles.intro}>
+                  お酒を飲まない人のための<br />
+                  バーのような存在でありたい。<br /><br />
+                  お店の片隅で閑か珈琲を飲む。<br />
+                  読書に集中する。<br />
+                  たまたま隣に腰掛ける知らない誰かと、<br />
+                  とりとめもない無駄話に、ふける。
+                </p>
+              </div>
               <div className="contentWrap">
                 <h2 className='title03'>Coffee</h2>
                 <p className={styles.intro}>

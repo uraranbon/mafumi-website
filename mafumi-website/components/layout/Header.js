@@ -43,12 +43,12 @@ export default function Header() {
             />
           </Link>
           <ul className={styles.links}>
-            <li><Link href="/about/" onClick={closeNav} scroll={false}>About Us</Link></li>
-            <li><Link href="/menu/" onClick={closeNav} scroll={false}>Menu</Link></li>
-            <li><Link href="/access" onClick={closeNav} scroll={false}>Access</Link></li>
-            <li><Link href="/faq/" onClick={closeNav} scroll={false}>FAQ</Link></li>
-            <li><Link href="/recipe/" onClick={closeNav} scroll={false}>Recipe</Link></li>
-            <li><Link href="https://mafumicoffee.square.site/" target='_blank' onClick={closeNav}>Online Shop</Link></li>
+            <li><Link href="/about/" onClick={closeNav} scroll={false}>眞踏珈琲店について</Link></li>
+            <li><Link href="/menu/" onClick={closeNav} scroll={false}>お品書き</Link></li>
+            <li><Link href="/access" onClick={closeNav} scroll={false}>店舗情報</Link></li>
+            <li><Link href="/faq/" onClick={closeNav} scroll={false}>よくあるご質問</Link></li>
+            <li><Link href="/recipe/" onClick={closeNav} scroll={false}>レシピ</Link></li>
+            <li><Link href="https://mafumicoffee.square.site/" target='_blank' onClick={closeNav}>オンラインショップ</Link></li>
           </ul>
         </nav>
       </div>

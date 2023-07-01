@@ -62,7 +62,7 @@ export default function Recipe() {
 
   return (
     <PageLayout
-      pageEn="Recipe"
+      pageEn="レシピ"
       kvImage="/sources/image/keyVisual/bg_drip.jpg"
       kvImageSp="/sources/image/keyVisual/bg_drip_sp.jpg"
       pageContents={

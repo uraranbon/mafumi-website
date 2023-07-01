@@ -15,16 +15,20 @@ export default function Footer() {
           />
         </Link>
         <ul className={styles.links}>
-          <li><Link href="/about/" scroll={false}>About Us</Link></li>
-          <li><Link href="/menu/" scroll={false}>Menu</Link></li>
-          <li><Link href="/access" scroll={false}>Access</Link></li>
-          <li><Link href="/faq/" scroll={false}>FAQ</Link></li>
-          <li><Link href="/recipe/" scroll={false}>Recipe</Link></li>
-          <li><Link href="https://mafumicoffee.square.site/" target='_blank'>Online Shop</Link></li>
+          <li><Link href="/about/" scroll={false}>眞踏珈琲店について</Link></li>
+          <li><Link href="/menu/" scroll={false}>お品書き</Link></li>
+          <li><Link href="/access" scroll={false}>店舗情報</Link></li>
+          <li><Link href="/faq/" scroll={false}>よくあるご質問</Link></li>
+          <li><Link href="/recipe/" scroll={false}>レシピ</Link></li>
+          <li><Link href="https://mafumicoffee.square.site/" target='_blank'>オンラインショップ</Link></li>
         </ul>
         <div className={styles.wrap}>
           <table className={styles.info}>
             <tbody>
+              <tr>
+                <th>店名</th>
+                <td>眞踏珈琲店</td>
+              </tr>
               <tr>
                 <th>住所</th>
                 <td>〒101-0052 東京都千代田区神田小川町3-1-7</td>

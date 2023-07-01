@@ -22,11 +22,12 @@
 }
 
 .info {
-  width: calc(100% - 200px);
-  padding: 10px 20px 10px 0;
+  width: calc(100% - 160px);
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
   @include sp {
-    width: calc(100% - 120px);
-
+    width: calc(100% - 100px);
   }
   .en, .ja {
     display: block;
@@ -35,11 +36,12 @@
     font-size: 56px;
     line-height: 1;
     font-family: 'Cormorant Garamond';
-    font-size: clamp(1.25rem, 0.42rem + 3.61vw, 3.5rem); //56-22
+    font-size: clamp(0.875rem, 0.705rem + 0.73vw, 1.25rem); //20-14
+    margin-top: 6px;
   }
   .ja {
-    margin-top: 2px;
+    line-height: 1.1;
     font-family: "Shippori Mincho";
-    font-size: clamp(0.875rem, 0.783rem + 0.4vw, 1.125rem); //18-14
+    font-size: clamp(1.25rem, 0.795rem + 1.94vw, 2.25rem); //36-20
   }
 }

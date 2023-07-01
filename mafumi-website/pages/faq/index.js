@@ -6,7 +6,7 @@ import PageLayout from '../../components/layout/PageLayout'
 export default function Faq() {
   return (
     <PageLayout
-      pageEn="FAQ"
+      pageEn="よくあるご質問"
       kvImage="/sources/image/keyVisual/bg_coffee.jpg"
       kvImageSp="/sources/image/keyVisual/bg_coffee_sp.jpg"
       pageContents={
