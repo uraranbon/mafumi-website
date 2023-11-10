@@ -1,0 +1,32 @@
+{
+  "name": "mafumi-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.18.1",
+    "@splidejs/react-splide": "^0.7.12",
+    "framer-motion": "^10.12.16",
+    "next": "13.4.4",
+    "next-videos": "1.4.1",
+    "react": "18.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-string-replace": "^1.1.0",
+    "react-twitter-widgets": "^1.11.0",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.14",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "next-export-optimize-images": "^2.1.0",
+    "typescript": "5.1.6"
+  }
+}

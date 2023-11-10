@@ -1,0 +1,138 @@
+@import "./styles/Mixin.scss";
+
+.footer {
+  padding: 100px 0 40px;
+  position: relative;
+  background: linear-gradient(to bottom, #520101, #2b0200);
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  @include pc {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+  }
+  @include sp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  li {
+    @include sp {
+      &:nth-child(even) {
+        border-left: 1px solid rgba($color: #fff, $alpha: 0.3);
+      }
+    }
+  }
+  a {
+    font-size: 14px;
+    position: relative;
+    display: block;
+    font-family: "Shippori Mincho";
+    padding-bottom: 4px;
+    @include sp {
+      text-align: center;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: rgba($color: #fff, $alpha: 0.3);
+    }
+    &:hover {
+      &:before {
+        @include pc {
+          width: 100%;
+        }
+      }
+    }
+    svg {
+      vertical-align: middle;
+      margin-left: 4px;
+      margin-bottom: 2px;
+      @include sp {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+.logo {
+  display: block;
+  margin: 0 auto 40px;
+  width: 80px;
+}
+.info {
+  width: 50%;
+  @include sp {
+    display: none;
+  }
+  th,
+  td {
+    font-size: 14px;
+    font-family: "Shippori Mincho";
+  }
+  th {
+    text-align: left;
+    vertical-align: top;
+    width: 20%;
+  }
+  td {
+    width: 80%;
+  }
+}
+.copyright {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Cormorant Garamond";
+  @include sp {
+    margin-top: 40px;
+    font-size: 11px;
+  }
+}
+
+.wrap {
+  margin-top: 40px;
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.snsLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @include sp {
+    justify-content: center;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #fff, $alpha: 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    &:hover {
+      @include pc {
+        transform: scale(1.1);
+      }
+    }
+    figure {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}

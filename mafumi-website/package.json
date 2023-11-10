@@ -16,13 +16,16 @@
     "react": "18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
     "react-string-replace": "^1.1.0",
     "react-twitter-widgets": "^1.11.0",
     "sass": "^1.62.1"
   },
   "devDependencies": {
+    "@types/react": "18.2.14",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
-    "next-export-optimize-images": "^2.1.0"
+    "next-export-optimize-images": "^2.1.0",
+    "typescript": "5.1.6"
   }
 }

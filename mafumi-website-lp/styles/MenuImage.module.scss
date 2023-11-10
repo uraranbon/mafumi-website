@@ -1,0 +1,23 @@
+@import "./styles/Mixin.scss";
+
+.itemPhoto {
+  figure {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    @include sp {
+      height: vw(240, 375);
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .title {
+    font-size: 14px;
+    text-align: right;
+    margin-top: 10px;
+    font-family: "Shippori Mincho";
+  }
+}

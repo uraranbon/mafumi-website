@@ -1,62 +1,26 @@
 @import "./styles/Mixin.scss";
 
-.shopWrap {
+.shopInfo {
+  position: relative;
+  font-size: 14px;
+  padding: 30px;
+  margin-left: auto;
+  max-width: 800px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 20px 40px;
+  grid-template-columns: 1.3fr 1fr;
+  @include pc {
+    background-color: #470000;
+    align-items: flex-end;
+    margin-top: -50px;
+  }
   @include sp {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
-.image {
-  position: relative;
-  margin: 0 auto;
-  figure {
-    width: 100%;
-    height: 500px;
-    @include sp {
-      width: 100%;
-      height: 250px;
-    }
-  }
-  img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.table {
-  th,
-  td {
-    @include pc {
-      padding: 14px 0;
-    }
-    @include sp {
-      display: block;
-    }
-  }
-  th {
-    text-align: left;
-    vertical-align: top;
-    font-family: "Shippori Mincho";
-    @include pc {
-      width: 30%;
-    }
-    @include sp {
-      padding-top: 10px;
-      padding-bottom: 0;
-    }
-  }
-  td {
-    @include pc {
-      width: 70%;
-    }
-    @include sp {
-      padding-top: 0px;
-      padding-bottom: 10px;
-    }
+.shopText {
+  svg {
+    vertical-align: middle;
   }
 }

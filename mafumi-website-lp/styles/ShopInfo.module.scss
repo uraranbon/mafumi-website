@@ -1,0 +1,27 @@
+@import "./styles/Mixin.scss";
+
+.shopInfo {
+  position: relative;
+  font-size: 14px;
+  padding: 30px;
+  margin-left: auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  @include pc {
+    background-color: #440000;
+    align-items: flex-end;
+    margin-top: -50px;
+  }
+  @include sp {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 15px;
+  }
+}
+
+.shopText {
+  svg {
+    vertical-align: middle;
+  }
+}

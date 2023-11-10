@@ -15,11 +15,10 @@ export default function Beans() {
         pageContents={
         <>
           <section className="sectionArea">
-            <div className="innerArea">
-              <ShopInfo />
-            </div>
+            <Map />
+            <ShopInfo />
           </section>
-          <Map />
+
           <section className="sectionArea">
             <div className="innerArea">
               <div className="pageButtonWrap">

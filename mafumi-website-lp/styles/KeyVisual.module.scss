@@ -1,0 +1,29 @@
+@import "./styles/Mixin.scss";
+
+.keyVisual {
+  height: 400px;
+  position: relative;
+  @include sp {
+    height: 200px;
+  }
+  picture {
+    position: relative;
+    width: 100%;
+    img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+      @include sp {
+        height: 200px;
+      }
+    }
+  }
+  .title {
+    font-size: clamp(2.125rem, 1.102rem + 4.36vw, 4.375rem); //70-34
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -0.5em;
+  }
+}

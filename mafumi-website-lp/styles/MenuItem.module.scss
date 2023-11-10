@@ -1,0 +1,47 @@
+
+@import "./styles/Mixin.scss";
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+  padding: 20px 0;
+  @include sp {
+    padding: 20px 0;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+  .info {
+    width: calc(100% - 100px);
+    @include sp {
+      width: calc(100% - 80px);
+    }
+  }
+  .ja {
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: "Shippori Mincho";
+    @include sp {
+      font-size: 16px;
+    }
+  }
+  .en {
+    font-size: 16px;
+    font-family: 'Cormorant Garamond';
+    @include sp {
+      font-size: 14px;
+    }
+  }
+  .explain {
+    padding-top: 10px;
+    font-size: 14px;
+    @include sp {
+      font-size: 12px;
+    }
+  }
+  .price {
+    font-size: 16px;
+  }
+}

@@ -20,8 +20,8 @@ export default function MainVisual() {
           </div>
           <div className='logo'>
             <img
-              src="/sources/image/logoText.png"
-              alt=""
+              src="/sources/image/logoTextWhite.png"
+              alt="眞踏珈琲店"
             />
           </div>
         </div>

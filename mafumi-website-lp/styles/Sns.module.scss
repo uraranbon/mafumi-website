@@ -1,0 +1,30 @@
+@import "./styles/Mixin.scss";
+
+.snsWrap {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  @include pc {
+    justify-content: center;
+    align-items: center;
+  }
+  @include sp {
+    flex-direction: column;
+  }
+}
+
+.timeline {
+  @include pc {
+    width: 500px;
+  }
+  @include sp {
+    width: 100%;
+  }
+}
+
+.text {
+  margin-bottom: 40px;
+  line-height: 2;
+  text-align: center;
+}
+

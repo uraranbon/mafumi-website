@@ -61,10 +61,10 @@ export default function Home() {
           <section className="sectionArea" id='access'>
             <div className="innerArea">
             <h2 className='title03'>店舗情報</h2>
-              <ShopInfo />
             </div>
+            <Map />
+            <ShopInfo />
           </section>
-          <Map />
           <Sns />
         </div>
         </motion.div>

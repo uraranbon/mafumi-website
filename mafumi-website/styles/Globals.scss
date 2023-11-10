@@ -450,7 +450,7 @@ dd {
   }
   .title {
     text-align: center;
-    font-size: 40px;
+    font-size: 24px;
     position: relative;
     z-index: 2;
     @include pc {
@@ -458,16 +458,12 @@ dd {
     }
     @include sp {
       font-size: 22px;
-      margin-bottom: -0.6em;
+      margin-bottom: 1em;
     }
   }
   .logo {
     position: relative;
     z-index: 2;
-    @include pc {
-      padding: 20px 40px;
-      background-color: rgba($color: #fff, $alpha: 0.7);
-    }
     @include sp {
       width: 231px;
       margin: -22px auto 0;
@@ -482,4 +478,6 @@ dd {
 :root {
   --white: #fff;
   --black: #000;
+  --grad01: #2d0000;
+  --grad02: #540101;
 }

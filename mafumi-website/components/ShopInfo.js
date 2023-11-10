@@ -1,46 +1,34 @@
 // import Image from 'next/image'
+import Link from 'next/link'
+import Map from '../components/Map'
 import styles from '../styles/ShopInfo.module.scss'
+
+//icon
+import { BsTelephone } from 'react-icons/bs';
+import { CiMail } from 'react-icons/ci';
 
 export default function shopInfo() {
   return (
     <div className={styles.shopInfo}>
-      <div className={styles.shopWrap}>
-        <div className={styles.image}>
-          <figure>
-            <img
-              src="/sources/image/shop.jpg"
-              alt=""
-            />
-          </figure>
-        </div>
-        <table className={styles.table}>
-          <tbody>
-            <tr>
-              <th>住所</th>
-              <td>〒101-0052  東京都千代田区神田小川町3-1-7</td>
-            </tr>
-            <tr>
-              <th>営業時間</th>
-              <td>
-              平日・土<br />12:00 - 23:00（L.0. 22:30）<br /><br />
-              日・祝<br />12:00 - 21:00（L.0. 20:30）
-              </td>
-            </tr>
-            <tr>
-              <th>定休日</th>
-              <td>なし（年中無休）</td>
-            </tr>
-            <tr>
-              <th>電話番号</th>
-              <td>03-6873-9351</td>
-            </tr>
-            <tr>
-              <th>メールアドレス</th>
-              <td>mafumi.coffee@gmail.com</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <p className={styles.shopText}>
+        眞踏珈琲店（<Link href="https://goo.gl/maps/BPDsnHnpeWf6SfAd7" target='_blank'>Google Map</Link>）<br />
+        〒101-0052 東京都千代田区神田小川町3-1-7<br /><br />
+        最寄り駅<br />
+        ・JR 御茶ノ水駅　徒歩8分<br />
+        ・都営新宿線 小川町駅　徒歩6分<br />
+        ・東京メトロ 神保町駅　徒歩6分<br /><br />
+
+        ※もし道に迷われてしまった場合、<br />
+        　お電話をいただければ道順をご案内いたします。
+      </p>
+      <p className={styles.shopText}>
+        営業時間<br />
+        平日・土：12:00 - 23:00（L.0. 22:30）<br />
+        日・祝　：12:00 - 21:00（L.0. 20:30）<br />
+        定休日	：なし（年中無休）<br /><br />
+        <BsTelephone />	<a href='tel:03-6873-9351'>03-6873-9351</a><br />
+        <CiMail />	mafumi.coffee@gmail.com<br />
+      </p>
     </div>
   )
 }

@@ -1,0 +1,47 @@
+@import "./styles/Mixin.scss";
+
+.pageButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba($color: #2b0200, $alpha: 0.5);
+  &:hover {
+    @include pc {
+      background: rgba($color: #2b0200, $alpha: 1);
+    }
+  }
+  figure {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    @include sp {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.info {
+  width: calc(100% - 160px);
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  @include sp {
+    width: calc(100% - 100px);
+  }
+  .en, .ja {
+    display: block;
+  }
+  .en {
+    font-size: 56px;
+    line-height: 1;
+    font-family: 'Cormorant Garamond';
+    font-size: clamp(0.875rem, 0.705rem + 0.73vw, 1.25rem); //20-14
+    margin-top: 6px;
+  }
+  .ja {
+    line-height: 1.1;
+    font-family: "Shippori Mincho";
+    font-size: clamp(1.25rem, 0.795rem + 1.94vw, 2.25rem); //36-20
+  }
+}

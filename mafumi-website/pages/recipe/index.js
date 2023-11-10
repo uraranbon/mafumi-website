@@ -70,12 +70,14 @@ export default function Recipe() {
           <div className="innerArea">
             <div className="contentWrap">
               <h2 className="title01">珈琲 琥珀</h2>
+              <div className={styles.twoColumn}>
               <figure className={styles.thumbnail}>
                 <img
                   src="/sources/image/recipe/coffee.jpg"
                   alt="珈琲 琥珀"
                 />
               </figure>
+              <div className={styles.info}>
               <h3 className="title02">材料（2人分／200cc）</h3>
               <ul className={styles.itemList}>
                 {dataCoffee.map(({ name,amount,index }) => (
@@ -92,15 +94,19 @@ export default function Recipe() {
                   <li key={index}>{name}</li>
                 ))}
               </ul>
+              </div>
+            </div>
             </div>
             <div className="contentWrap">
               <h2 className="title01">カフェ・アイランダイズ<small>（ホット・アイス）</small></h2>
+              <div className={styles.twoColumn}>
               <figure className={styles.thumbnail}>
                 <img
                   src="/sources/image/menu/coffee_img_03.jpg"
                   alt="カフェ・アイランダイズ（ホット・アイス）"
                 />
               </figure>
+              <div className={styles.info}>
               <h3 className="title02">材料（1人分）</h3>
               <ul className={styles.itemList}>
                 {dataIrish.map(({ name,amount,index }) => (
@@ -116,6 +122,8 @@ export default function Recipe() {
                   <li key={index}>{name}</li>
                 ))}
               </ul>
+              </div>
+              </div>
             </div>
             <div className="pageButtonWrap mt">
               <PageButtonMenu />

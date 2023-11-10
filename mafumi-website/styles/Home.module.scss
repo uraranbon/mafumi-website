@@ -2,5 +2,5 @@
 
 .bgWrap {
   position: relative;
-  background: linear-gradient(to bottom, #2d0000, #540101);
+  background: linear-gradient(to bottom, var(--grad01), var(--grad02));
 }

@@ -3,7 +3,7 @@ import styles from '../styles/Map.module.scss'
 
 const containerStyle = {
   width: "100%",
-  height: "500px",
+  height: "600px",
 };
 
 const center = {
@@ -67,14 +67,6 @@ export default function Map() {
           <MarkerF position={position} icon={"../sources/image/mapIcon.svg"} />
         </GoogleMap>
       </LoadScript>
-      <div className={styles.mapInfo}>
-        最寄り駅<br /><br />
-        ・JR 御茶ノ水駅　徒歩8分<br />
-        ・都営新宿線 小川町駅　徒歩6分<br />
-        ・東京メトロ 神保町駅　徒歩6分<br /><br />
-        ※もし道に迷われてしまった場合、<br />
-        　お電話をいただければ道順をご案内いたします。
-      </div>
     </div>
   )
 }
